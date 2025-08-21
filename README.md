@@ -1,4 +1,4 @@
-![logo](logo2.png)
+![logo](logo2.jpg)
 # 🐮 Moo SSG
 
 Um Static Site Generator minimalista, pensado em developer experience, construído com Node.js. Transforme simples arquivos YAML em sites completos com templates EJS.
