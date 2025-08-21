@@ -1,0 +1,45 @@
+<%# layout='hosting' %>
+    <% if (page.blocks) { %>
+        <% for (const block of page.blocks) { %>
+            <% if(block.type=="banner" ) { %>
+                <div class="nav-bar">
+                    <% if(block.content) {%>
+                        <nav>
+                            <%=block.content%>
+                        </nav>
+                        <%}%>
+                            <% if(block.images) { %>
+                                <% for (const image of block.images){ %>
+                                    <div class="image-wrapper">
+                                        <img src="images/<%= image.href %>" alt="mascotes" class="imagem-banner">
+                                    </div>
+                                    <% } %>
+                                        <%}%>
+                                            <% } %>
+                </div>
+
+                <% if(block.type=="presentation" ){ %>
+                    <p class="presentation">
+                        <%= block.paragraph %>
+                    </p>
+                    <% } %>
+                        <% if(block.type=='documentation' ) { %>
+                            <% for (const paragraph of block.paragraphs) { %>
+                                <div class="titulo-doc">
+                                    <h2>
+                                        <%= paragraph.content %>
+                                    </h2>
+                                    <% if(paragraph.codes) { %>
+                                        <% for(const code of paragraph.codes) { %>
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    <%= code.code %>
+                                                </div>
+                                            </div>
+                                            <% } %>
+                                                <% } %>
+                                </div>
+                                <% } %>
+                                    <% } %>
+                                        <% } %>
+                                            <% } %>

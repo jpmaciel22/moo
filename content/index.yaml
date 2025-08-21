@@ -1,21 +1,35 @@
-template: blog
-title: Example Website
-theme: light
+template: landing_page
+title: 🐮
+theme: dark
 header:
   - label: home
     href: index.html
 blocks:
-  - type: subtitle
-    content: Subtitle
-  - type: post
-    content: Hello, this is an example text, utilizing "moo", the minimalistic static site generator based on YAML and uses the EJS template engine.
-    post_date: 2025-07-28
+  - type: banner
     images:
-    - href: imagem2.png
-    - href: imagem3.png
-    links:
-    - href: https://github.com/jpmaciel22/moo
-      text: Github
-  - type: post
-    content: "Hi again, you can create posts with multiple links and multiple images... or none if you wish so."
-    post_date: 2025-07-28
+      - href: image.png
+    content: moo, the DX focused static-site generator.
+  - type: presentation
+    paragraph: Olá, bem vindo ao site do moo, seu static-site generator focado em developer experience e liberdade de criação. Para utilizá-lo basta seguir o guia abaixo de instalação e configuração.
+  - type: documentation
+    paragraphs:
+      - content: "Instalação"
+        codes:
+          - code: git clone https://github.com/jpmaciel22/moo.git
+          - code: npm i
+          - code: npm link moo
+      - content: "Lógica de pastas"
+        codes:
+          - code: moo/
+          - code: "├── content/  // arquivos yaml"
+          - code: "├── templates/ // arquivos .ejs de template"
+          - code: "├── layouts/ // layouts do site"
+          - code: "├── public/ // pasta que será hosteada ( inclui padrão nativo para hosting no vercel )"
+          - code: "└── config.yaml // configurações globais do site ( e.g: navegação )"
+      - content: "Exemplo:"
+        codes:
+          - code: "# no yaml:"
+          - code: "theme: dark"
+          - code: "# no template:"
+          - code: "data-theme='<%= page.theme %>'"
+          - code: " # É SIMPLES ASSIM PARA CRIAR CONTEÚDO DINÂMICO NO MOO."

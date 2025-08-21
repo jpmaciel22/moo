@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moo, the static site generator</title>
+    <link rel="stylesheet" href="styles/style_landing.css">
+</head>
+
+<body>
+    
+    
+        
+            
+                <div class="nav-bar">
+                    
+                        <nav>
+                            moo, the DX focused static-site generator.
+                        </nav>
+                        
+                            
+                                
+                                    <div class="image-wrapper">
+                                        <img src="images/image.png" alt="mascotes" class="imagem-banner">
+                                    </div>
+                                    
+                                        
+                                            
+                </div>
+
+                
+                        
+                                        
+            
+                </div>
+
+                
+                    <p class="presentation">
+                        Olá, bem vindo ao site do moo, seu static-site generator focado em developer experience e liberdade de criação. Para utilizá-lo basta seguir o guia abaixo de instalação e configuração.
+                    </p>
+                    
+                        
+                                        
+            
+                </div>
+
+                
+                        
+                            
+                                <div class="titulo-doc">
+                                    <h2>
+                                        Instalação
+                                    </h2>
+                                    
+                                        
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    git clone https://github.com/jpmaciel22/moo.git
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    npm i
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    npm link moo
+                                                </div>
+                                            </div>
+                                            
+                                                
+                                </div>
+                                
+                                <div class="titulo-doc">
+                                    <h2>
+                                        Lógica de pastas
+                                    </h2>
+                                    
+                                        
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    moo/
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    ├── content/  // arquivos yaml
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    ├── templates/ // arquivos .ejs de template
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    ├── layouts/ // layouts do site
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    ├── public/ // pasta que será hosteada ( inclui padrão nativo para hosting no vercel )
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    └── config.yaml // configurações globais do site ( e.g: navegação )
+                                                </div>
+                                            </div>
+                                            
+                                                
+                                </div>
+                                
+                                <div class="titulo-doc">
+                                    <h2>
+                                        Exemplo:
+                                    </h2>
+                                    
+                                        
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    # no yaml:
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    theme: dark
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    # no template:
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                    data-theme=&#39;&lt;%= page.theme %&gt;&#39;
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="code-block">
+                                                <div class="code-content">
+                                                     # É SIMPLES ASSIM PARA CRIAR CONTEÚDO DINÂMICO NO MOO.
+                                                </div>
+                                            </div>
+                                            
+                                                
+                                </div>
+                                
+                                    
+                                        
+                                            
+        <footer class="footer">Built with moo.</footer>
+</body>
+
+</html>
