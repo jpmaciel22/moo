@@ -1,9 +1,9 @@
 ![logo](logo2.png)
 # 🐮 Moo SSG
 
-Um Static Site Generator minimalista, poderoso e divertido, construído com Node.js. Transforme simples arquivos YAML em sites completos com templates EJS.
+Um Static Site Generator minimalista, pensado em developer experience, construído com Node.js. Transforme simples arquivos YAML em sites completos com templates EJS.
 
-## ✨ Características
+## Características
 
 - **🚀 Super Rápido**: Gera sites estáticos em milissegundos
 - **🎨 Flexível**: Use qualquer estrutura de dados YAML + templates EJS
@@ -15,10 +15,10 @@ Um Static Site Generator minimalista, poderoso e divertido, construído com Node
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/moo-ssg.git
+git clone https://github.com/jpmaciel22/moo.git
 
 # Entre na pasta
-cd moo-ssg
+cd moo
 
 # Instale as dependências
 npm install
@@ -72,18 +72,7 @@ autor: "Seu Nome"
 data: 2024-03-08
 tags: [tecnologia, web, javascript]
 
-conteudo: |
-  Bem-vindo ao **meu blog** feito com Moo SSG!
-
-  - Funciona com Markdown
-  - Templates personalizáveis
-  - Fácil de usar
-
-  ## Recursos Incríveis
-
-  ✅ Geração estática rápida  
-  ✅ Live reload automático  
-  ✅ Totalmente personalizável
+conteudo: Bem-vindo ao meu blog.
 ```
 
 ### 4. Template de Página
