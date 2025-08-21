@@ -7,7 +7,7 @@ Um Static Site Generator minimalista, pensado em developer experience, construí
 
 - **🚀 Super Rápido**: Gera sites estáticos em milissegundos
 - **🎨 Flexível**: Use qualquer estrutura de dados YAML + templates EJS
-- **⚙️ Fácil Configuração**: Sistema simples de layouts e templates
+- **⚙️ Fácil Configuração**: Sistema simples de layouts e templates com exemplos inclusos
 - **🔧 Live Reload**: Servidor de desenvolvimento com atualização automática
 - **📁 Organizado**: estrutura de pastas lógica e intuitiva
 
